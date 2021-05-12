@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // p__MinimiseAverageVI
 Rcpp::List p__MinimiseAverageVI(arma::mat sample_of_partitions, arma::vec weights, arma::vec decision_init);
-RcppExport SEXP GreedyEPL_p__MinimiseAverageVI(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
+RcppExport SEXP _GreedyEPL_p__MinimiseAverageVI(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -21,7 +21,7 @@ END_RCPP
 }
 // p__MinimiseAverageB
 Rcpp::List p__MinimiseAverageB(arma::mat sample_of_partitions, arma::vec weights, arma::vec decision_init);
-RcppExport SEXP GreedyEPL_p__MinimiseAverageB(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
+RcppExport SEXP _GreedyEPL_p__MinimiseAverageB(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -34,7 +34,7 @@ END_RCPP
 }
 // p__MinimiseAverageNVI
 Rcpp::List p__MinimiseAverageNVI(arma::mat sample_of_partitions, arma::vec weights, arma::vec decision_init);
-RcppExport SEXP GreedyEPL_p__MinimiseAverageNVI(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
+RcppExport SEXP _GreedyEPL_p__MinimiseAverageNVI(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -47,7 +47,7 @@ END_RCPP
 }
 // p__MinimiseAverageNID
 Rcpp::List p__MinimiseAverageNID(arma::mat sample_of_partitions, arma::vec weights, arma::vec decision_init);
-RcppExport SEXP GreedyEPL_p__MinimiseAverageNID(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
+RcppExport SEXP _GreedyEPL_p__MinimiseAverageNID(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -60,7 +60,7 @@ END_RCPP
 }
 // p__CollapseLabelsCpp
 Rcpp::List p__CollapseLabelsCpp(arma::vec decision);
-RcppExport SEXP GreedyEPL_p__CollapseLabelsCpp(SEXP decisionSEXP) {
+RcppExport SEXP _GreedyEPL_p__CollapseLabelsCpp(SEXP decisionSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;

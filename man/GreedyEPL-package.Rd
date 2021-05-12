@@ -14,6 +14,6 @@ Riccardo Rastelli
 Mantainer: Riccardo Rastelli <riccardo.rastelli@wu.ac.at>
 }
 \references{
-Rastelli, R. and Friel, N. (2016) "Optimal Bayesian estimators for latent variable cluster models", \url{https://arxiv.org/abs/1607.02325}
+Rastelli, R. and Friel, N. (2017) "Optimal Bayesian estimators for latent variable cluster models" <DOI:10.1007/s11222-017-9786-y>
 }
 \keyword{ package }

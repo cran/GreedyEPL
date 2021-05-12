@@ -10,7 +10,7 @@ MinimiseEPL(sample_of_partitions, pars = list())
 }
 \arguments{
   \item{sample_of_partitions}{A \code{TxN} matrix whose rows correspond to partitions of the same \code{N} data observations.}
-  \item{pars}{A number of additional parameters. See 'Details'.}
+  \item{pars}{A list of additional parameters. See 'Details'.}
 }
 \details{
 \itemize{
@@ -22,9 +22,6 @@ MinimiseEPL(sample_of_partitions, pars = list())
 }
 \seealso{
   \code{\link{CollapseLabels}}.
-}
-\references{
-Rastelli, R. and Friel, N. (2016) "Optimal Bayesian estimators for latent variable cluster models", \url{https://arxiv.org/abs/1607.02325}
 }
 \examples{
 set.seed(123)

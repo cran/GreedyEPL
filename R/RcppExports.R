@@ -2,22 +2,22 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 p__MinimiseAverageVI <- function(sample_of_partitions, weights, decision_init) {
-    .Call('GreedyEPL_p__MinimiseAverageVI', PACKAGE = 'GreedyEPL', sample_of_partitions, weights, decision_init)
+    .Call(`_GreedyEPL_p__MinimiseAverageVI`, sample_of_partitions, weights, decision_init)
 }
 
 p__MinimiseAverageB <- function(sample_of_partitions, weights, decision_init) {
-    .Call('GreedyEPL_p__MinimiseAverageB', PACKAGE = 'GreedyEPL', sample_of_partitions, weights, decision_init)
+    .Call(`_GreedyEPL_p__MinimiseAverageB`, sample_of_partitions, weights, decision_init)
 }
 
 p__MinimiseAverageNVI <- function(sample_of_partitions, weights, decision_init) {
-    .Call('GreedyEPL_p__MinimiseAverageNVI', PACKAGE = 'GreedyEPL', sample_of_partitions, weights, decision_init)
+    .Call(`_GreedyEPL_p__MinimiseAverageNVI`, sample_of_partitions, weights, decision_init)
 }
 
 p__MinimiseAverageNID <- function(sample_of_partitions, weights, decision_init) {
-    .Call('GreedyEPL_p__MinimiseAverageNID', PACKAGE = 'GreedyEPL', sample_of_partitions, weights, decision_init)
+    .Call(`_GreedyEPL_p__MinimiseAverageNID`, sample_of_partitions, weights, decision_init)
 }
 
 p__CollapseLabelsCpp <- function(decision) {
-    .Call('GreedyEPL_p__CollapseLabelsCpp', PACKAGE = 'GreedyEPL', decision)
+    .Call(`_GreedyEPL_p__CollapseLabelsCpp`, decision)
 }
 

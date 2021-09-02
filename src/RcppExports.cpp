@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // p__MinimiseAverageVI
 Rcpp::List p__MinimiseAverageVI(arma::mat sample_of_partitions, arma::vec weights, arma::vec decision_init);
 RcppExport SEXP _GreedyEPL_p__MinimiseAverageVI(SEXP sample_of_partitionsSEXP, SEXP weightsSEXP, SEXP decision_initSEXP) {

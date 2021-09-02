@@ -7,12 +7,14 @@
 # include "core_normalised_variation_of_information.h"
 # include "core_normalised_information_distance.h"
 
-// the following two functions are just utils to shuffle an arma::vec
-inline int randWrapper(const int n) { return floor(unif_rand()*n); }
+// the function randomShuffle is just a utils to shuffle an arma::vec
 arma::vec randomShuffle(arma::vec a) {
-  arma::vec b = a;
-  std::random_shuffle(b.begin(), b.end(), randWrapper);
-  return b;
+  Rcpp::IntegerVector b = Rcpp::sample(a.n_elem, a.n_elem);
+  arma::vec res(a.n_elem);
+  for (unsigned int index=0; index<a.n_elem; ++index) {
+    res.at(index) = b.at(index) - 1;
+  }
+  return res;
 }
 
 template< class T >

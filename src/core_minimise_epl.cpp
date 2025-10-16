@@ -42,7 +42,8 @@ arma::vec MinimiseEpl (T * data, unsigned int max_n_iter) {
     {
       i = pool.at(index);
       data->EvaluateDeltas(i);
-      delta_best = data->deltas.min(h_best_uword);
+      h_best_uword = data->deltas.index_min();
+      delta_best = data->deltas.at(h_best_uword);
       h_best = h_best_uword;
       if (delta_best < 0) data->Move(i,h_best);
       epl_store.at(1+data->N*iter+index) = data->epl_value;

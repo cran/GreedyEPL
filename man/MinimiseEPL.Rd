@@ -14,10 +14,10 @@ MinimiseEPL(sample_of_partitions, pars = list())
 }
 \details{
 \itemize{
-\item{\code{weights}: }{a vector of size \code{T} assigning a positive weight to each of the partitions in the sample. The vector does not have to be normalised but its entries must be positive numbers. If unspecified all weights are set to 1.}
-\item{\code{Kup}: }{positive integer identifying the number of groups used to generate the random initial partition. Defaults to \code{N}.}
-\item{\code{decision_init}: }{a vector of size \code{N} identifying the partition used to initialise the greedy algorithm. Entries must be integers greater than one. The default is \code{sample(1:Kup, N, TRUE)}. Note that the number of groups in the initial partition also corresponds to the maximum number of groups allowed.}
-\item{\code{loss_type}: }{defines the loss function to be used in the expected posterior loss minimisation. Can be one of \code{"VI"} (Variation of Information), \code{"B"} (Binder's loss), \code{"NVI"} (Normalised Variation of Information) or \code{"NID"} (Normalised Information Distance). Defaults to \code{"VI"}.}
+\item \code{weights}: a vector of size \code{T} assigning a positive weight to each of the partitions in the sample. The vector does not have to be normalised but its entries must be positive numbers. If unspecified all weights are set to 1.
+\item \code{Kup}: positive integer identifying the number of groups used to generate the random initial partition. Defaults to \code{N}.
+\item \code{decision_init}: a vector of size \code{N} identifying the partition used to initialise the greedy algorithm. Entries must be integers greater than one. The default is \code{sample(1:Kup, N, TRUE)}. Note that the number of groups in the initial partition also corresponds to the maximum number of groups allowed.
+\item \code{loss_type}: defines the loss function to be used in the expected posterior loss minimisation. Can be one of \code{"VI"} (Variation of Information), \code{"B"} (Binder's loss), \code{"NVI"} (Normalised Variation of Information) or \code{"NID"} (Normalised Information Distance). Defaults to \code{"VI"}.
 }
 }
 \seealso{
